@@ -23,7 +23,7 @@ public class CommonElements {
             for(int j=0; j<nums2.length; j++) {
                 if(nums1[i] == nums2[j] && !common.contains(nums1[i])) {
                     common.add(nums1[i]);
-                }
+                }   
             }
         }
         return common;

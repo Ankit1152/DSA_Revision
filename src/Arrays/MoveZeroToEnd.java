@@ -5,6 +5,7 @@ import java.util.Arrays;
 // If nz is pointing towards the non-zero element , it swaps with z index element
 // z is always stick to the 0 
 
+// TAP ACADEMY
 public class MoveZeroToEnd {
     public static void moveZeroes(int nums[]) {
         if(nums.length == 0 || nums.length == 1) {
