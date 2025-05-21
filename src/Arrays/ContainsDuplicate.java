@@ -5,8 +5,8 @@ import java.util.Collections;
 import java.util.HashSet;
 
 public class ContainsDuplicate {
-    
-    // GFG problem := using Brute force   TC :- O(n^2)
+
+    // GFG problem := using Brute force TC :- O(n^2)
     public static ArrayList<Integer> duplicates(int[] arr) {
         // code here
         int n = arr.length;
@@ -27,16 +27,16 @@ public class ContainsDuplicate {
         if (duplicates.isEmpty()) {
             duplicates.add(-1);
         }
+
         return duplicates;
     }
-
 
     // TC :- O(nlogn)
     public static ArrayList<Integer> optimizedDuplicates(int[] arr) {
         int n = arr.length;
-        HashSet<Integer> seen = new HashSet<>();  // to store all the unique elements encountered in the array.
+        HashSet<Integer> seen = new HashSet<>(); // to store all the unique elements encountered in the array.
         HashSet<Integer> duplicatesSet = new HashSet<>(); // to store the elements that appear more than once.
-        ArrayList<Integer> duplicates = new ArrayList<>();  // to store the final list of duplicates.
+        ArrayList<Integer> duplicates = new ArrayList<>(); // to store the final list of duplicates.
 
         // Iterate over the array and find duplicates
         for (int i = 0; i < n; i++) {

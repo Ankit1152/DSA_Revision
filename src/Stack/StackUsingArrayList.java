@@ -34,15 +34,15 @@ public class StackUsingArrayList {
 
     public static void main(String[] args) {
         Stack s = new Stack(); // we can use directly main function me Static class using make them static
-        Stack.push(10);
+        s.push(10);
         s.push(20);
         s.push(30);
         s.push(40);
         s.push(60);
 
         while (!s.isEmpty()) {
-            System.out.print(s.peek() + " ");
-            s.pop();
+            System.out.print(s.pop() + " ");
+            // s.pop();
         }
 
     }

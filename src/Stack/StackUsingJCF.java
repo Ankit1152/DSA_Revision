@@ -11,6 +11,8 @@ public class StackUsingJCF {
         s.push(40);
         s.push(60);
 
+        // System.out.print(s + " ");
+
         while (!s.isEmpty()) {
             System.out.print(s.peek() + " ");
             s.pop();

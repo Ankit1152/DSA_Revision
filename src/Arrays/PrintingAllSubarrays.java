@@ -2,7 +2,7 @@ package Arrays;
 
 public class PrintingAllSubarrays {
     public static void main(String[] args) {
-        int num[] = {-5,4,6,-3,4,-1};
+        int num[] = { -5, 4, 6, -3, 4, -1 };
         int n = num.length;
         // Iterate over all possible starting points
         for (int start = 0; start < n; start++) {
@@ -12,7 +12,7 @@ public class PrintingAllSubarrays {
                 System.out.print("[");
                 for (int i = start; i <= end; i++) {
                     System.out.print(num[i]);
-                    if (i < end) { 
+                    if (i < end) {
                         System.out.print(",");
                     }
                 }

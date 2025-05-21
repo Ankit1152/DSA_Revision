@@ -2,12 +2,13 @@ package Arrays;
 
 public class PeakElement {
     public static void main(String[] args) {
-        int arr[] = {4, 5, 6, 7, 2,8,6};
+        int arr[] = { 4, 5, 6, 7, 2, 8, 6 };
         System.out.println(findPeakElement(arr));
         System.out.println(optimizedPeakElement(arr));
 
     }
-    // Brute force   TC - O(n)  SC - O(1)
+
+    // Brute force TC - O(n) SC - O(1)
     public static int findPeakElement(int arr[]) {
         // Corner case: if array has only one element
         if (arr.length == 1) {
@@ -34,18 +35,17 @@ public class PeakElement {
         return -1;
     }
 
-
-// Find the Peak element   TC :- O(nlogn)    SC :- O(1)
+    // Find the Peak element TC :- O(nlogn) SC :- O(1)
     public static int optimizedPeakElement(int arr[]) {
-        if(arr.length == 1) {
+        if (arr.length == 1) {
             return 0;
         }
         int start = 0, end = arr.length - 1;
         while (start < end) {
-            int mid = start + (end - start)/2;
-            if(arr[mid] < arr[mid+1]) {
-                start = mid+1;
-            }else {
+            int mid = start + (end - start) / 2;
+            if (arr[mid] < arr[mid + 1]) {
+                start = mid + 1;
+            } else {
                 end = mid;
             }
         }

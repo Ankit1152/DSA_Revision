@@ -30,7 +30,7 @@ public class RotateArray {
         // rotate(nums, -1);
         // System.out.println(Arrays.toString(nums)); // [5, 2, 3, 4, 1]
 
-        rotateByKTimes(arr, 3);
+        rotateByKTimes(arr, 4);
         System.out.println(Arrays.toString(arr));
     }
 

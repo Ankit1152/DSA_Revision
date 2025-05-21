@@ -8,25 +8,46 @@ import java.util.Arrays;
 // TAP ACADEMY
 public class MoveZeroToEnd {
     public static void moveZeroes(int nums[]) {
-        if(nums.length == 0 || nums.length == 1) {
+        if (nums.length == 0 || nums.length == 1) {
             return;
         }
         int nz = 0, z = 0;
-        while(nz != nums.length) {
-            if(nums[nz] != 0) {
+        while (nz != nums.length) {
+            if (nums[nz] != 0) {
                 int temp = nums[nz];
                 nums[nz] = nums[z];
                 nums[z] = temp;
                 nz++;
                 z++;
-            }else {
+            } else {
                 nz++;
             }
         }
     }
+
+    public static void move(int arr[]) {
+        if (arr.length == 0 || arr.length == 1) {
+            return;
+        }
+
+        int nz = 0, z = 0;
+        while (nz != arr.length) {
+            if (arr[nz] != 0) {
+                int temp = arr[nz];
+                arr[nz] = arr[z];
+                arr[z] = temp;
+
+                nz++;
+                z++;
+            } else {
+                nz++;
+            }
+        }
+    }
+
     public static void main(String[] args) {
-        int nums[] = {0,1,0,3,12};    
-        moveZeroes(nums);
+        int nums[] = { 0, 1, 0, 3, 12 };
+        move(nums);
         System.out.println(Arrays.toString(nums));
     }
 }
